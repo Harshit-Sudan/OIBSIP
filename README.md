@@ -9,7 +9,7 @@ Welcome to my project repository for the Security Analyst Internship at Oasis In
 ## Tasks and Projects
 This repository is organized by task to document my technical progress.
 
-| Task Number | Description | Status |
+| Task | Description | Status |
 | :--- | :--- | :--- |
 | **1** | [Basic Network Scanning with Nmap](Task_1/) | Completed |
 
