@@ -24,17 +24,20 @@ A virtualized lab environment was created using VirtualBox NAT Network configura
 Used the following command to check the IP address of the machines:
 ```bash
 ip a
-2. Performed Host Discovery
+
+### 2. Performed Host Discovery
 Executed an Nmap ping scan to identify active hosts in the subnet:
 
 Bash
 sudo nmap -sn 10.0.2.0/24
-3. Performed Service Version Detection
+
+### 3. Performed Service Version Detection
 Executed a service version scan on the target machine:
 
 Bash
 sudo nmap -sV 10.0.2.5
-Results
+
+## Results
 The scan successfully identified multiple open ports and services running on the target machine. Detected services included:
 
 FTP
@@ -47,7 +50,7 @@ HTTP
 
 The -sV scan option was critical in identifying the specific version numbers of these services, allowing for further vulnerability analysis.
 
-Deliverables
+## Deliverables
 Scan Results: nmap_scan_results.txt
 
 Screenshots: Included in the repository.
