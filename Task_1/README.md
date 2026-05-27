@@ -37,12 +37,10 @@ sudo nmap -sn 10.0.2.0/24
 ### 3. Performed Service Version Detection
 Executed a service version scan on the target machines (Metasploitable 2 and Ubuntu):
 
+```bash
 # Scan Metasploitable 2
-```bash
 sudo nmap -sV 10.0.2.5
-```
 # Scan Ubuntu VM
-```bash
 sudo nmap -sV 10.0.2.6
 ```
 ## Results
