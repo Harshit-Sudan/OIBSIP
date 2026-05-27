@@ -35,10 +35,15 @@ sudo nmap -sn 10.0.2.0/24
 ```
 
 ### 3. Performed Service Version Detection
-Executed a service version scan on the target machine:
+Executed a service version scan on the target machines (Metasploitable 2 and Ubuntu):
 
+# Scan Metasploitable 2
 ```bash
 sudo nmap -sV 10.0.2.5
+```
+# Scan Ubuntu VM
+```bash
+sudo nmap -sV 10.0.2.6
 ```
 ## Results
 The scan successfully identified multiple open ports and services running on the target machine. Detected services included:
