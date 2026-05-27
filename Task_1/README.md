@@ -41,21 +41,15 @@ Executed a service version scan on the target machines (Metasploitable 2 and Ubu
 # Scan Metasploitable 2
 sudo nmap -sV 10.0.2.5
 # Scan Ubuntu VM
-sudo nmap -sV 10.0.2.6
+sudo nmap -sV 10.0.2.4
 ```
 ## Results
-The scan successfully identified multiple open ports and services running on the target machine. Detected services included:
+The scan results differed based on the target machine's configuration:
 
-FTP
+* **Metasploitable 2 (10.0.2.5):** The scan successfully identified multiple open ports and services, including FTP, SSH, Telnet, and HTTP. 
+* **Ubuntu VM (10.0.2.4):** Although the host was confirmed to be "up," but all 1000 scanned TCP ports were reported as "closed" (reset). This indicates that the machine has no services actively listening for connections, making it appear invisible to this specific type of service discovery.
 
-SSH
-
-Telnet
-
-HTTP
-
-The -sV scan option was critical in identifying the specific version numbers of these services, allowing for further vulnerability analysis.
-
+---
 ## Deliverables
 Scan Results: nmap_scan_results.txt
 
