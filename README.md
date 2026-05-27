@@ -11,10 +11,7 @@ This repository is organized by task to document my technical progress.
 
 | Task Number | Description | Status |
 | :--- | :--- | :--- |
-| **1** | [Task 1: Basic Network Scanning with Nmap](Task_1/) | Completed |
-| **2** | [Task 4: Research Report on Network Security Threats](Task_4/) | Pending |
-| **3** | [Task 8: Capture Network Traffic with Wireshark](Task_8/) | Pending |
-| **4** | [Task 10: Network Security Assessment Report](Task_10/) | Pending |
+| **1** | [Basic Network Scanning with Nmap](Task_1/) | Completed |
 
 ## About the Author
 **Harshit Sudan**
