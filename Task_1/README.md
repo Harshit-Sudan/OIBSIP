@@ -85,4 +85,4 @@ Scan Results: [nmap_scan_results.txt](nmap_scan_results.txt)
 
 Supporting Screenshots: [screenshots folder](screenshots/).
 
-Demo Video: [View on LinkedIn]()
+Demo Video: [View on LinkedIn](https://www.linkedin.com/posts/harshit-sudan-63208a3a3_cybersecurity-securityanalyst-networksecurity-ugcPost-7465787809686249472-kCSF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGLJ_wYBNeGnUfWJ1hQI8Bv_PAlKIh4h378)
