@@ -83,6 +83,6 @@ In contrast, the Ubuntu virtual machine responded to network probes but had no a
 ## Deliverables
 Scan Results: [nmap_scan_results.txt](nmap_scan_results.txt)
 
-Screenshots: Included in the repository.
+Supporting Screenshots: [screenshots folder](screenshots/).
 
-Demo Video: HarshitSudan_Task1.mp4
+Demo Video: [View on LinkedIn]()
