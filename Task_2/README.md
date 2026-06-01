@@ -31,7 +31,7 @@ ufw --version
 ```
 
 ### 2. Checked Current Firewall Status
-Checked the existing firewall state to understand the default configuration before applying any rules.
+I checked the existing firewall state to understand the default configuration before applying any rules.
 ```bash
 sudo ufw status
 ```
