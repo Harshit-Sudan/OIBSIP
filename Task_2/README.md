@@ -115,5 +115,5 @@ reflects the kind of thinking that applies to real-world firewall management as 
 
 ## Deliverables
 - Firewall Configuration Script: [ufw_configuration.sh](./ufw_configuration.sh)
-- Supporting Screenshot: `screenshots/ufw_status.png`
+- Supporting Screenshot: [ufw_status.png](./screenshots/ufw_status.png)
 - Demo Video: [View on LinkedIn]()
