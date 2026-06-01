@@ -12,7 +12,7 @@ This repository is organized by task to document my technical progress.
 | Task | Description | Status |
 | :--- | :--- | :--- |
 | **1** | [Basic Network Scanning with Nmap](Task_1/) | Completed |
-| **2** | [Basic Firewall Configuration with UFW](Task_2/) Pending |
+| **2** | [Basic Firewall Configuration with UFW](Task_2/) | Pending |
 
 ## About the Author
 **Harshit Sudan**
