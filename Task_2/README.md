@@ -116,4 +116,4 @@ reflects the kind of thinking that applies to real-world firewall management as 
 ## Deliverables
 - Firewall Configuration Script: [ufw_configuration.sh](./ufw_configuration.sh)
 - Supporting Screenshot: [ufw_status.png](./screenshots/ufw_status.png)
-- Demo Video: [View on LinkedIn]()
+- Demo Video: [View on LinkedIn](https://www.linkedin.com/posts/harshit-sudan-63208a3a3_cybersecurity-securityanalyst-linux-ugcPost-7467141411528699904-tQRa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGLJ_wYBNeGnUfWJ1hQI8Bv_PAlKIh4h378)
