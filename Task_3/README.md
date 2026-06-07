@@ -13,16 +13,15 @@ both the vulnerability and how it can be properly mitigated.
 |------|---------|
 | Docker Desktop | Used to deploy and run the DVWA container locally |
 | DVWA (Damn Vulnerable Web Application) | Target web application for vulnerability assessment |
-| Windows 11 | Host operating system |
 | Web Browser | Used to interact with the DVWA web interface |
 | CrackStation | Used to crack extracted MD5 password hashes |
 
 ---
 
 ## Lab Environment
-DVWA was deployed as a Docker container on a Windows 11 host machine and accessed 
-through a web browser at localhost:8080. The application was configured at Low security 
-level for the initial assessment to demonstrate the vulnerability, and then switched to 
+DVWA was deployed as a Docker container and accessed 
+through a web browser at localhost:8080.At first application was configured at Low security 
+level for the initial assessment to demonstrate the vulnerability and then switched to 
 Impossible security level to validate the mitigation.
 
 ---
@@ -30,17 +29,16 @@ Impossible security level to validate the mitigation.
 ## Steps Performed
 
 ### 1. Deployed DVWA Using Docker
-The DVWA container was started using Docker Desktop and verified to be running 
+The DVWA container was started using command prompt and verified to be running 
 successfully on localhost:8080.
 
-### 2. Logged Into DVWA
+### 2. Logged into DVWA
 Accessed the application through the browser and logged in using the default credentials 
-(admin/password). It is worth noting that default credentials are a common security 
-misconfiguration in real-world applications and should always be changed after deployment.
+(admin/password).Default credentials like these are a known security risk and should 
+always be changed before deploying any application in a real environment.
 
 ### 3. Initialized the Database
-After logging in, the database was initialized using the Create/Reset DataBase option to 
-ensure the application was ready for testing.
+After logging in, the database was initialized using the Create/Reset DataBase option.
 
 ### 4. Confirmed Security Level
 Navigated to DVWA Security and confirmed the security level was set to Low before 
@@ -48,8 +46,8 @@ starting the assessment.
 
 ### 5. Identified the Vulnerability
 Opened the SQL Injection module and entered a single quote (') in the User ID field. 
-The application returned a SQL syntax error, confirming that user input was being 
-passed directly into the database query without any sanitization.
+The application returned a SQL syntax error which confirmed that the input field was not 
+validating user input before passing it to the database query
 
 ### 6. Exploited the Vulnerability
 The following UNION-based SQL injection payload was used to extract usernames and 
@@ -63,14 +61,13 @@ The application returned a list of usernames along with their MD5 hashed passwor
 confirming successful data exfiltration.
 
 ### 7. Cracked the Password Hashes
-The extracted MD5 hashes were submitted to CrackStation. The plain-text passwords 
-were successfully recovered, showing the full impact of the vulnerability — from 
-data exfiltration all the way to account takeover.
+The recovered MD5 hashes were then cracked using CrackStation, which successfully revealed 
+the plain-text passwords. This shows how a simple injection can go beyond just 
+data exposure and lead to full account takeover.
 
 ### 8. Validated the Mitigation
-The security level was switched to Impossible and the same payload was run again. 
-No output was returned, confirming that parameterized queries successfully block 
-the injection attempt.
+The security level was then switched to Impossible and the same payload was run again. 
+This time no output was returned, confirming that the injection attempt was successfully blocked.
 
 ---
 
