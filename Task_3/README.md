@@ -93,20 +93,16 @@ treated strictly as data and never as part of the SQL query itself. This complet
 eliminates the injection vector regardless of what the attacker enters.
 
 ### Real World Impact
-SQL Injection is consistently ranked among the most critical web application 
-vulnerabilities. A successful attack can lead to unauthorized data access, 
-authentication bypass, and in serious cases full database compromise. Cracking 
+SQL Injection is one of the most well known and dangerous vulnerabilities in web applications.
+A successful attack can lead to unauthorized data access, 
+authentication bypass and in serious cases full database compromise.Cracking 
 the extracted hashes further demonstrates how a single vulnerability can escalate 
 into a complete account takeover.
 
 ---
 
 ## What I Learned
-This task gave me a clear practical understanding of how SQL Injection works beyond 
-just theory. Going through the full process i.e., triggering the error, running the 
-payload, cracking the hashes, and then validating the fix made it easy to see 
-why input sanitization matters so much. The most interesting part was how a simple 
-change in how the query handles input completely shuts down the attack.
+This task gave me a much better understanding of how SQL Injection actually works in practice. Going through the full process — triggering the error, running the payload, cracking the hashes, and then testing the fix — made everything click. What stood out the most was how simply changing the way the query handles input was enough to completely stop the attack.
 
 ---
 
