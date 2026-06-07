@@ -102,7 +102,7 @@ into a complete account takeover.
 ---
 
 ## What I Learned
-This task gave me a much better understanding of how SQL Injection actually works in practice. Going through the full process — triggering the error, running the payload, cracking the hashes, and then testing the fix — made everything click. What stood out the most was how simply changing the way the query handles input was enough to completely stop the attack.
+This task gave me a much better understanding of how SQL Injection actually works in practice. Going through the full process i.e., triggering the error, running the payload, cracking the hashes, and then testing the fix made everything click.What stood out the most was how simply changing the way the query handles input was enough to completely stop the attack.
 
 ---
 
@@ -117,4 +117,4 @@ This task gave me a much better understanding of how SQL Injection actually work
 
 ## Deliverables
 - Supporting Screenshots: `screenshots/`
-- Demo Video: [View on LinkedIn](#)
+- Demo Video: [View on LinkedIn]()
