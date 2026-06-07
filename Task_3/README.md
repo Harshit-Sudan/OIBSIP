@@ -39,7 +39,7 @@ Accessed the application through the browser and logged in using the default cre
 misconfiguration in real-world applications and should always be changed after deployment.
 
 ### 3. Initialized the Database
-After logging in, the database was initialized using the Setup / Reset DB option to 
+After logging in, the database was initialized using the Create/Reset DataBase option to 
 ensure the application was ready for testing.
 
 ### 4. Confirmed Security Level
@@ -106,8 +106,8 @@ into a complete account takeover.
 
 ## What I Learned
 This task gave me a clear practical understanding of how SQL Injection works beyond 
-just theory. Going through the full process — triggering the error, running the 
-payload, cracking the hashes, and then validating the fix — made it easy to see 
+just theory. Going through the full process i.e., triggering the error, running the 
+payload, cracking the hashes, and then validating the fix made it easy to see 
 why input sanitization matters so much. The most interesting part was how a simple 
 change in how the query handles input completely shuts down the attack.
 
