@@ -13,7 +13,7 @@ This repository is organized by task to document my technical progress.
 | :--- | :--- | :--- |
 | **1** | [Basic Network Scanning with Nmap](Task_1/) | Completed |
 | **2** | [Basic Firewall Configuration with UFW](Task_2/) | Completed |
-| **3** | [Exploit a Vulnerability in a Web Application (SQLi)]() | Pending |
+| **3** | [Exploit a Vulnerability in a Web Application (SQLi)]() | Completed |
 ## About the Author
 **Harshit Sudan**
 * Computer Science Engineering Student 
