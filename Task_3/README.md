@@ -116,5 +116,5 @@ This task gave me a much better understanding of how SQL Injection actually work
 ---
 
 ## Deliverables
-SQL Injection Exploit Script: [SQL Injection exploit script](sql_injection_exploit.sh)
+- SQL Injection Exploit Script: [SQL Injection exploit script](sql_injection_exploit.sh)
 - Demo Video: [View on LinkedIn]()
