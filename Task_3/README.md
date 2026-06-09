@@ -118,4 +118,4 @@ This task gave me a much better understanding of how SQL Injection actually work
 ## Deliverables
 - SQL Injection Exploit Script: [SQL Injection exploit script](sql_injection_exploit.sh)
 - Supported Screenshots : [Screenshots](screenshots/)
-- Demo Video: [View on LinkedIn]()
+- Demo Video: [View on LinkedIn](https://www.linkedin.com/posts/harshit-sudan-63208a3a3_cybersecurity-securityanalyst-sqlinjection-ugcPost-7469637484105125888-IjN5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGLJ_wYBNeGnUfWJ1hQI8Bv_PAlKIh4h378)
