@@ -1,7 +1,7 @@
 # Task 4 - Network Security Assessment
 
 ## Objective
-The objective of this task was to perform a network security assessment on a virtual lab environment using Nmap and Wireshark. The assessment involved scanning the target system for open ports and running services, capturing live network traffic, analyzing the findings, and documenting potential security risks along with recommendations.
+The objective of this task was to perform a network security assessment on a virtual lab environment using Nmap and Wireshark.The assessment involved scanning the target system for open ports and running services, capturing live network traffic, analyzing the findings, and documenting potential security risks along with recommendations.
 
 ---
 
@@ -16,7 +16,7 @@ The objective of this task was to perform a network security assessment on a vir
 ---
 
 ## Lab Environment
-A virtualized lab environment was set up using VirtualBox with both virtual machines connected through a VirtualBox NAT Network. This kept the assessment completely isolated from the host system. Kali Linux was used as the assessment machine and Ubuntu Linux was used as the target.
+A virtualized lab environment was set up using VirtualBox with both virtual machines connected through a VirtualBox NAT Network.This kept the assessment completely isolated from the host system.Kali Linux was used as the assessment machine and Ubuntu Linux was used as the target.
 
 ---
 
@@ -49,11 +49,11 @@ sudo ss -tuln | grep -E ':22|:80'
 No output confirmed both ports were inactive.
 
 ### 4. Baseline Nmap Scan
-With services stopped, a scan was performed to document the network state before any services were active. Results were saved to a file.
+With services stopped, a scan was performed to document the network state before any services were active.Results were saved to a file.
 ```bash
 sudo nmap -sV -sS 10.0.2.4 -oN nmap_before.txt
 ```
-No open ports were found at this stage. The Wireshark capture was stopped and the following filter was applied to confirm no services were listening:
+No open ports were found at this stage.The Wireshark capture was stopped and the following filter was applied to confirm no services were listening:
 
 | Filter | Purpose |
 |--------|---------|
@@ -96,16 +96,16 @@ The Wireshark capture was stopped after the scan completed. The following filter
 | 22/tcp | Open | SSH | OpenSSH 10.2p1 Ubuntu 2ubuntu3.2 (Ubuntu Linux; protocol 2.0) |
 | 80/tcp | Open | HTTP | Apache httpd 2.4.66 ((Ubuntu)) |
 
-Two services were found running on the target — SSH on port 22 and Apache HTTP on port 80. Detailed scan output is available in [nmap_results.txt](nmap_results.txt).
+Two services were found running on the target System i.e., SSH on port 22 and Apache HTTP on port 80.
 
 ---
 
 ## Analysis of Findings
 
-### Finding 1 — SSH Service Exposure (Port 22)
+### Finding 1 - SSH Service Exposure (Port 22)
 SSH was running and reachable from the network. While SSH itself is a secure protocol, an exposed SSH service is a common target for brute-force attacks. If password-based authentication is enabled and weak credentials are in use, this becomes a straightforward attack vector. The Wireshark filter `tcp.port == 22` confirmed active SSH communication between the two machines.
 
-### Finding 2 — HTTP Service Exposure (Port 80)
+### Finding 2 - HTTP Service Exposure (Port 80)
 Apache was serving unencrypted HTTP traffic on port 80. Unlike SSH, HTTP does not encrypt its content — everything transmitted over this connection is visible in plain text to anyone on the same network running a packet capture. The Wireshark filter `tcp.port == 80` confirmed HTTP traffic was fully visible. The Apache default page was also being served, which reveals software and version information to potential attackers.
 
 ### Baseline vs Active Scan Comparison
