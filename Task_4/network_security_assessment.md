@@ -1,8 +1,8 @@
 # Network Security Assessment Report
 
-**Prepared By:** Harshit  
+**Prepared By:** Harshit Sudan
 **Internship:** Security Analyst Intern – Oasis Infobyte  
-**Task:** Task 10 – Network Security Assessment  
+**Task:** Task 4 – Network Security Assessment  
 **Environment:** VirtualBox NAT Network (Isolated Virtual Lab)
 
 ---
