@@ -12,7 +12,6 @@ The objective of this task was to perform a network security assessment on a vir
 | Wireshark | Packet capture and network traffic analysis |
 | Kali Linux | Assessment machine used for scanning and capture |
 | Ubuntu Linux | Target machine for the assessment |
-| VirtualBox | Used to manage and run the virtual lab environment |
 
 ---
 
@@ -62,8 +61,6 @@ Filters used:
 - `tcp` — all TCP traffic from the scan
 - `ssh` — SSH communication on port 22
 - `http` — HTTP communication on port 80
-- `arp` — how the machines discovered each other
-- `icmp` — ping and probe packets
 
 ---
 
