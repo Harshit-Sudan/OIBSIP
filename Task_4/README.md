@@ -132,4 +132,4 @@ This task tied together a lot of what I worked on throughout the internship.Runn
 - Active Nmap Scan Results: [nmap_results.txt](nmap.results.txt/)
 - Wireshark Baseline capture: [wireshark_before.pcap](wireshark_before.pcap/)
 - Wireshark Capture: [wireshark_capture.pcap](wireshark_capture.pcap/)
-- Demo Video: [View on LinkedIn](<your-linkedin-post-url>)
+- Demo Video: [View on LinkedIn]()
