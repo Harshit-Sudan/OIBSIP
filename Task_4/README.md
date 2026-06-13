@@ -68,8 +68,8 @@ Filters used:
 
 | Port | State | Service | Version |
 |------|-------|---------|---------|
-| 22/tcp | Open | SSH | OpenSSH 8.x (Ubuntu Linux) |
-| 80/tcp | Open | HTTP | Apache httpd 2.x (Ubuntu) |
+| 22/tcp | Open | SSH | OpenSSH10.2p1 Ubuntu 2ubuntu3.2 (Ubuntu Linux; protocol 2.0) |
+| 80/tcp | Open | HTTP | Apache httpd 2.4.66 ((Ubuntu)) |
 
 Two services were found running on the target — SSH on port 22 and Apache HTTP on port 80. Detailed scan output is available in [nmap_results.txt](nmap_results.txt).
 
