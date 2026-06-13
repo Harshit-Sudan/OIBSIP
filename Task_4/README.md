@@ -128,8 +128,8 @@ This task tied together a lot of what I worked on throughout the internship.Runn
 
 ## Deliverables
 - Security Assessment Report: [network_security_assessment.md](network_security_assessment.md)
-- Baseline Nmap Scan: [nmap_before.txt](nmap_before.txt/)
-- Active Nmap Scan Results: [nmap_results.txt](nmap_results.txt/)
+- Baseline Nmap Scan: [nmap_before.txt](nmap.before.txt/)
+- Active Nmap Scan Results: [nmap_results.txt](nmap.results.txt/)
 - Wireshark Baseline capture: [wireshark_before.pcap](wireshark_before.pcap/)
 - Wireshark Capture: [wireshark_capture.pcap](wireshark_capture.pcap/)
 - Demo Video: [View on LinkedIn](<your-linkedin-post-url>)
