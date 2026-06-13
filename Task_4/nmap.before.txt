@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Thu Jun 11 16:33:09 2026 as: /usr/lib/nmap/nmap -sV -sS -oN nmap.before.txt 10.0.2.4
+Nmap scan report for 10.0.2.4
+Host is up (0.00074s latency).
+All 1000 scanned ports on 10.0.2.4 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 08:00:27:1F:B8:51 (Oracle VirtualBox virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 11 16:33:10 2026 -- 1 IP address (1 host up) scanned in 0.99 seconds
