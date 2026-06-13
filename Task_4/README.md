@@ -106,15 +106,15 @@ Two services were found running on the target System i.e., SSH on port 22 and Ap
 SSH was running and reachable from the network. While SSH itself is a secure protocol, an exposed SSH service is a common target for brute-force attacks. If password-based authentication is enabled and weak credentials are in use, this becomes a straightforward attack vector. The Wireshark filter `tcp.port == 22` confirmed active SSH communication between the two machines.
 
 ### Finding 2 - HTTP Service Exposure (Port 80)
-Apache was serving unencrypted HTTP traffic on port 80. Unlike SSH, HTTP does not encrypt its content — everything transmitted over this connection is visible in plain text to anyone on the same network running a packet capture. The Wireshark filter `tcp.port == 80` confirmed HTTP traffic was fully visible. The Apache default page was also being served, which reveals software and version information to potential attackers.
+Apache was serving unencrypted HTTP traffic on port 80.Unlike SSH, HTTP does not encrypt its content.HTTP does not encrypt transmitted data, making sensitive information susceptible to interception by attackers with access to the network.The Wireshark filter `tcp.port == 80` confirmed communication associated with the HTTP service.The Apache default page was accessible, potentially increasing information disclosure about the web service.
 
 ### Baseline vs Active Scan Comparison
-The baseline scan with no services running showed only RST packets in Wireshark (`tcp.flags.reset == 1`) — the system was rejecting all connection attempts. After enabling SSH and Apache, the same scan returned two open ports. This comparison clearly demonstrates how each running service adds to the attack surface.
+The baseline scan with no services running showed only RST packets in Wireshark (`tcp.flags.reset == 1`) i.e., the system was rejecting all connection attempts. After enabling SSH and Apache, the same scan returned two open ports. This comparison clearly demonstrates how each running service adds to the attack surface.
 
 ---
 
 ## What I Learned
-This task tied together a lot of what I worked on throughout the internship. Running the baseline before enabling services was something I hadn't done before, and it made the difference between the two scans very easy to understand and explain. Using `ss` to verify services before and after was also useful — it gave immediate confirmation that the stop and start commands had actually worked before running the scan. Seeing HTTP traffic appear in plain text in Wireshark while SSH traffic showed up as encrypted was a practical demonstration of why switching to HTTPS matters.
+This task tied together a lot of what I worked on throughout the internship.Running the baseline before enabling services was something I hadn't done before, and it made the difference between the two scans very easy to understand and explain.Using `ss` to verify services before and after was also useful as it gave immediate confirmation that the stop and start commands had actually worked before running the scan.
 
 ---
 
@@ -123,8 +123,7 @@ This task tied together a lot of what I worked on throughout the internship. Run
 - Replace HTTP with HTTPS to encrypt web traffic
 - Remove or replace the Apache default page to avoid exposing version information
 - Apply a default-deny firewall policy and only allow ports that are actively needed
-- Regularly scan your own systems to catch services that should not be running
-
+- Perform periodic security assessments to identify unnecessary or unintended exposed services.
 ---
 
 ## Deliverables
